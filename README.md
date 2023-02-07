@@ -18,12 +18,13 @@ import (
 	authv1 "buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go/gpcloud/api/auth/v1"
 	cloudv1 "buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go/gpcloud/api/cloud/v1"
 	"github.com/G-PORTAL/gpcloud-go/pkg/gpcloud/client"
+	"github.com/G-PORTAL/gpcloud-go/pkg/gpcloud/client/auth"
 )
 
 func main() {
 	conn, err := client.NewClient(
 		// For getting your own client ID and client Secret please ask support
-		client.AuthOptions{
+		&auth.ProviderKeycloakUserPassword{
 			ClientID:     "my-custom-client-id",
 			ClientSecret: "my-custom-client-secret",
 			Username:     "example@gpcloud.customer",
@@ -49,4 +50,5 @@ func main() {
 		log.Println("Project ID: ", project.Id)
 	}
 }
+
 ```
