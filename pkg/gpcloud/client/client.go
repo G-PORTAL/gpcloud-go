@@ -14,7 +14,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-const DefaultEndpoint = "grpc.gpcloud.space:443"
+const DefaultEndpoint = "grpc.g-portal.cloud:443"
 
 type Client struct {
 	grpcClient *grpc.ClientConn
