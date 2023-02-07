@@ -3,7 +3,6 @@ package client
 import (
 	"crypto/tls"
 	"fmt"
-	"log"
 
 	"buf.build/gen/go/gportal/gportal-cloud/grpc/go/gpcloud/api/auth/v1/authv1grpc"
 	"buf.build/gen/go/gportal/gportal-cloud/grpc/go/gpcloud/api/cloud/v1/cloudv1grpc"
@@ -20,8 +19,6 @@ const DefaultEndpoint = "grpc.g-portal.cloud:443"
 type Client struct {
 	grpcClient *grpc.ClientConn
 }
-
-type EndpointOverrideOption string
 
 // CloudClient Returns the CloudServiceClient
 func (c *Client) CloudClient() cloudv1grpc.CloudServiceClient {
@@ -49,38 +46,29 @@ func (c *Client) PaymentClient() paymentv1grpc.PaymentServiceClient {
 }
 
 // NewClient Returns a new GRPC client
-func NewClient(extraOptions ...interface{}) (*Client, error) {
+func NewClient(authOptions AuthOptions, options ...grpc.DialOption) (*Client, error) {
 	cl := &Client{}
 
-	var options []grpc.DialOption
 	// Certificate pinning
 	options = append(options, grpc.WithTransportCredentials(credentials.NewTLS(getTLSOptions())))
 
 	// User Agent
 	options = append(options, grpc.WithUserAgent(fmt.Sprintf("GPCloud Golang Client [%s]", Version)))
 
-	endpoint := DefaultEndpoint
-	authenticationDefined := false
-	for _, option := range extraOptions {
-		if opt, ok := option.(grpc.DialOption); ok {
-			options = append(options, opt)
-			continue
+	// Default auth loader
+	if authOptions.ClientID != "" &&
+		authOptions.ClientSecret != "" &&
+		authOptions.Username != "" &&
+		authOptions.Password != "" {
+		auth, err := NewAuth(&authOptions)
+		if err != nil {
+			return nil, err
 		}
-		if opt, ok := option.(EndpointOverrideOption); ok {
-			endpoint = string(opt)
-			continue
-		}
-		if opt, ok := option.(AuthProviderOption); ok && !authenticationDefined {
-			log.Printf("Using auth provider: %T", opt)
-			options = append(options, grpc.WithPerRPCCredentials(&AuthOption{
-				Provider: &opt,
-			}))
-			authenticationDefined = true
-			continue
-		}
+		// Access Token
+		options = append(options, grpc.WithPerRPCCredentials(auth))
 	}
 
-	clientConn, err := grpc.Dial(endpoint, options...)
+	clientConn, err := grpc.Dial(DefaultEndpoint, options...)
 	if err != nil {
 		return nil, err
 	}
