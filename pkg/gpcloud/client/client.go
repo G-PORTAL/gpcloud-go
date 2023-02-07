@@ -55,12 +55,18 @@ func NewClient(authOptions AuthOptions, options ...grpc.DialOption) (*Client, er
 	// User Agent
 	options = append(options, grpc.WithUserAgent(fmt.Sprintf("GPCloud Golang Client [%s]", Version)))
 
-	auth, err := NewAuth(&authOptions)
-	if err != nil {
-		return nil, err
+	// Default auth loader
+	if authOptions.ClientID != "" &&
+		authOptions.ClientSecret != "" &&
+		authOptions.Username != "" &&
+		authOptions.Password != "" {
+		auth, err := NewAuth(&authOptions)
+		if err != nil {
+			return nil, err
+		}
+		// Access Token
+		options = append(options, grpc.WithPerRPCCredentials(auth))
 	}
-	// Access Token
-	options = append(options, grpc.WithPerRPCCredentials(auth))
 
 	clientConn, err := grpc.Dial(DefaultEndpoint, options...)
 	if err != nil {
