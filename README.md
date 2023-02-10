@@ -1,12 +1,19 @@
 # GPCloud Golang Client
 
-This is the official GPCloud Golang client. Please raise an issue if you have found any problems or having questions.
+This is the official GPCloud Golang client. Please open an issue if you have found
+a problem or having a question.
 
-### Recommendations
+## Recommendations
 
 - Golang 1.18 or higher
 
-### Example usage
+## Documentation
+
+You can find the current API documentation [here](https://buf.build/gportal/gportal-cloud).
+The protobuf definitions can also be [downloaded](https://buf.build/gportal/gportal-cloud/assets/main)
+from the buf.build repository.
+
+## Example usage
 
 ```go
 package main
