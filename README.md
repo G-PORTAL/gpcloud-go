@@ -10,8 +10,17 @@ a problem or having a question.
 ## Documentation
 
 You can find the current API documentation [here](https://buf.build/gportal/gportal-cloud).
-The protobuf definitions can also be [downloaded](https://buf.build/gportal/gportal-cloud/assets/main)
-from the buf.build repository.
+Packages for Go and Node.js can be [downloaded](https://buf.build/gportal/gportal-cloud/assets/main)
+from the buf.build repository. If you want to get the raw ```.proto``` definition files,
+use the [buf](https://docs.buf.build/reference/cli/buf) tool:
+
+```
+buf export buf.build/gportal/gportal-cloud -o .
+```
+
+## Protobuf definitions
+
+
 
 ## Example usage
 
