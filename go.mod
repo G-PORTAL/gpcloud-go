@@ -6,7 +6,7 @@ require (
 	buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.2.0-20230207110106-cd61926e15d5.4
 	buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.28.1-20230207110106-cd61926e15d5.4
 	github.com/Nerzal/gocloak/v12 v12.0.0
-	google.golang.org/grpc v1.52.3
+	google.golang.org/grpc v1.53.0
 )
 
 require (
@@ -17,9 +17,9 @@ require (
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/segmentio/ksuid v1.0.4 // indirect
-	golang.org/x/net v0.4.0 // indirect
-	golang.org/x/sys v0.3.0 // indirect
-	golang.org/x/text v0.5.0 // indirect
-	google.golang.org/genproto v0.0.0-20221118155620-16455021b5e6 // indirect
+	golang.org/x/net v0.5.0 // indirect
+	golang.org/x/sys v0.4.0 // indirect
+	golang.org/x/text v0.6.0 // indirect
+	google.golang.org/genproto v0.0.0-20230110181048-76db0878b65f // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 )
