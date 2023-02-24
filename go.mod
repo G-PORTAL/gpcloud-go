@@ -3,8 +3,8 @@ module github.com/G-PORTAL/gpcloud-go
 go 1.18
 
 require (
-	buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.2.0-20230221141041-366e58b4c120.4
-	buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.28.1-20230221141041-366e58b4c120.4
+	buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.2.0-20230223112228-cd4f66a3e46a.4
+	buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.28.1-20230223112228-cd4f66a3e46a.4
 	github.com/Nerzal/gocloak/v12 v12.0.0
 	google.golang.org/grpc v1.53.0
 )
