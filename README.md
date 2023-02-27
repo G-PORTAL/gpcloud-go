@@ -19,8 +19,12 @@ the [buf](https://docs.buf.build/reference/cli/buf) tool:
 buf export buf.build/gportal/gportal-cloud -o .
 ```
 
-## Protobuf definitions
+## Service Account
 
+You can create your own Service Account in the GPCloud Panel.
+
+Once you have created the Service Account, you can add it to projects as a member.
+The Service Account will only have access to Projects that the Service Account is a member of.
 
 
 ## Example usage
@@ -40,12 +44,11 @@ import (
 
 func main() {
 	conn, err := client.NewClient(
-		// For getting your own client ID and client Secret please ask support
-		&auth.ProviderKeycloakUserPassword{
-			ClientID:     "my-custom-client-id",
-			ClientSecret: "my-custom-client-secret",
-			Username:     "example@gpcloud.customer",
-			Password:     "password123",
+		// You can create your own Service Account in the GPCloud Panel.
+		// The Service Account can be added to projects as a member.
+		&auth.ProviderKeycloakClientAuth{
+			ClientID:     "47d838c3-5738-4a67-aafb-48b364fab41b", // Set your Client ID
+			ClientSecret: "MdErjhYSP4Nuq3h6qcYCMdErjhYSP4Nu", // Set your Client Secret
 		},
 	)
 	if err != nil {
