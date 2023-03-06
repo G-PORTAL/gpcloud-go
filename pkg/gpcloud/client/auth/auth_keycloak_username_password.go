@@ -2,9 +2,8 @@ package auth
 
 import (
 	"context"
+	"github.com/Nerzal/gocloak/v13"
 	"time"
-
-	"github.com/Nerzal/gocloak/v12"
 )
 
 type ProviderKeycloakUserPassword struct {
