@@ -1,6 +1,9 @@
 buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230315124426-ca1321035e2e.1 h1:O++dNGHh7C3Bf66q5/ZTG+e/HLDz1R/XO2OfEpgIy1Q=
 buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230315124426-ca1321035e2e.1/go.mod h1:ASOoiVxoTFRMqv/25KXFMQiqfaApqaGdiVGRWBWQQuA=
+buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230524101208-aa1b627dd5ea.1 h1:8Fhsu9Ug8H9VOYIVdGZerKSqWHgrRCmOaJdyM24dW5Y=
+buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230524101208-aa1b627dd5ea.1/go.mod h1:pMUhUMLphl+8Q4rDg670o72JdXus5mdLQFJajbSycGY=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.28.1-20230315124426-ca1321035e2e.4/go.mod h1:i79EhSPYzSdyy1aIb7EYriGb79IEL5zCkRfFb++j0vo=
+buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.28.1-20230524101208-aa1b627dd5ea.4/go.mod h1:i79EhSPYzSdyy1aIb7EYriGb79IEL5zCkRfFb++j0vo=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.29.0-20230315124426-ca1321035e2e.1 h1:AOn3IlMmTaMVzffUty4lZWWjMmKpVqIPTluPeDezviU=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.29.0-20230315124426-ca1321035e2e.1/go.mod h1:7+CpQdVjwLUm9ANzQKee9gzsart6y4VzSuB6j0vJ24E=
 buf.build/gen/go/grpc-ecosystem/grpc-gateway/grpc/go v1.3.0-20221127060915-a1ecdc58eccd.1/go.mod h1:AyYRpZBNAzxOhzaY02jFxL+P7eINiIju6BdSZyi1q7o=
