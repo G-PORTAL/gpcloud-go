@@ -5,7 +5,7 @@ go 1.18
 require (
 	buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230620101330-5b0588fb5c1f.1
 	buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.31.0-20230620101330-5b0588fb5c1f.1
-	github.com/Nerzal/gocloak/v13 v13.7.0
+	github.com/Nerzal/gocloak/v13 v13.8.0
 	google.golang.org/grpc v1.56.1
 )
 
