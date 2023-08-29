@@ -1,15 +1,13 @@
 package client
 
 import (
-	"crypto/tls"
-	"fmt"
-	"log"
-
 	"buf.build/gen/go/gportal/gportal-cloud/grpc/go/gpcloud/api/auth/v1/authv1grpc"
 	"buf.build/gen/go/gportal/gportal-cloud/grpc/go/gpcloud/api/cloud/v1/cloudv1grpc"
 	"buf.build/gen/go/gportal/gportal-cloud/grpc/go/gpcloud/api/metadata/v1/metadatav1grpc"
 	"buf.build/gen/go/gportal/gportal-cloud/grpc/go/gpcloud/api/network/v1/networkv1grpc"
 	"buf.build/gen/go/gportal/gportal-cloud/grpc/go/gpcloud/api/payment/v1/paymentv1grpc"
+	"crypto/tls"
+	"fmt"
 	"google.golang.org/grpc/credentials"
 
 	"google.golang.org/grpc"
@@ -71,7 +69,6 @@ func NewClient(extraOptions ...interface{}) (*Client, error) {
 			continue
 		}
 		if opt, ok := option.(AuthProviderOption); ok && !authenticationDefined {
-			log.Printf("Using auth provider: %T", opt)
 			options = append(options, grpc.WithPerRPCCredentials(&AuthOption{
 				Provider: &opt,
 			}))
