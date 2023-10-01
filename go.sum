@@ -2,12 +2,17 @@ buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230524101208-aa1b627dd5e
 buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230524101208-aa1b627dd5ea.1/go.mod h1:pMUhUMLphl+8Q4rDg670o72JdXus5mdLQFJajbSycGY=
 buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230620101330-5b0588fb5c1f.1 h1:CFKPk3b2OGD4q+t2q1vF+2NxMunYxn7MQzV3a4eDXmo=
 buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230620101330-5b0588fb5c1f.1/go.mod h1:vbIPCPlJXjtYHBqbo/pZXczPPvakzHmIrcYOhJGm5yE=
+buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230914063750-eecfce952b80.1 h1:Rr0yAH5bkHSTNPvQKVasd4J9k+LEZqOKixrHMt6NQf4=
+buf.build/gen/go/gportal/gportal-cloud/grpc/go v1.3.0-20230914063750-eecfce952b80.1/go.mod h1:I6EpRQ8If3Qu1RWI5t/1DKq4LEB+ENZr6F+S9vWqEKs=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.28.1-20230524101208-aa1b627dd5ea.4/go.mod h1:i79EhSPYzSdyy1aIb7EYriGb79IEL5zCkRfFb++j0vo=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.28.1-20230620101330-5b0588fb5c1f.4/go.mod h1:i79EhSPYzSdyy1aIb7EYriGb79IEL5zCkRfFb++j0vo=
+buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.28.1-20230914063750-eecfce952b80.4/go.mod h1:i79EhSPYzSdyy1aIb7EYriGb79IEL5zCkRfFb++j0vo=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.30.0-20230524101208-aa1b627dd5ea.1 h1:wIE+yDXpDoDsER6XapdiiI/k1S7t42+gY9NFi/NKkbo=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.30.0-20230524101208-aa1b627dd5ea.1/go.mod h1:leU1q36aoIIU3aRtMc27ZSmRL78/mIax7/XdIEQZC2s=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.31.0-20230620101330-5b0588fb5c1f.1 h1:p52i6qzr/J7FplV5elSfrmH9ll1PpxYNF3bjbkMa/vs=
 buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.31.0-20230620101330-5b0588fb5c1f.1/go.mod h1:38B3HqvwJe98FG2fG552VQlhQlsD/NA7AlJSQc+9Ey8=
+buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.31.0-20230914063750-eecfce952b80.1 h1:fjeVuAQHySS4q5I13F4YN/LWih5CYFHAwh5tG1++nrY=
+buf.build/gen/go/gportal/gportal-cloud/protocolbuffers/go v1.31.0-20230914063750-eecfce952b80.1/go.mod h1:38B3HqvwJe98FG2fG552VQlhQlsD/NA7AlJSQc+9Ey8=
 buf.build/gen/go/grpc-ecosystem/grpc-gateway/grpc/go v1.3.0-20221127060915-a1ecdc58eccd.1/go.mod h1:AyYRpZBNAzxOhzaY02jFxL+P7eINiIju6BdSZyi1q7o=
 buf.build/gen/go/grpc-ecosystem/grpc-gateway/protocolbuffers/go v1.28.1-20221127060915-a1ecdc58eccd.4/go.mod h1:92ejKVTiuvnKoAtRlpJpIxKfloI935DDqhs0NCRx+KM=
 buf.build/gen/go/grpc-ecosystem/grpc-gateway/protocolbuffers/go v1.30.0-20221127060915-a1ecdc58eccd.1/go.mod h1:Qrlblw0NsKJR59I6uRNZpmLXEKxtCozASRfporNdmy4=
