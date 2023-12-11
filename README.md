@@ -1,3 +1,8 @@
+**WARNING**: This repository is deprecated in favour of [gpcore-go](https://github.com/G-PORTAL/gpcore-go).
+Please use gpcore-go from now on. You can keep this (gpcloud-go) dependency in your existing
+projects, but keep in mind that new features will only land in gpcore-go. This repository
+is mainly here to not break existing code.
+
 # GPCloud Golang Client
 
 This is the official GPCloud Golang client. Please open an issue if you have found
